@@ -14,13 +14,18 @@
 
 [ "${GUARD_ALLOW_MAIN:-}" = "1" ] && exit 0
 
-cmd="$(read_command)"
+payload="$(cat)"
+cmd="$(printf '%s' "$payload" | read_command)"
 is_commit "$cmd" || exit 0
 
 flag_re='(^|[;&|[:space:]])(export[[:space:]]+)?GUARD_ALLOW_MAIN=1([;&|[:space:]]|$)'
 printf '%s' "$cmd" | grep -qE "$flag_re" && exit 0
 
-dir="${CLAUDE_PROJECT_DIR:-.}"
+# Check the branch where the command runs: the payload's cwd. In a git worktree session
+# CLAUDE_PROJECT_DIR can point at the main checkout, which may be on main while the
+# worktree is on its own branch, so it is only a fallback.
+dir="$(printf '%s' "$payload" | read_cwd)"
+[ -n "$dir" ] && [ -d "$dir" ] || dir="${CLAUDE_PROJECT_DIR:-.}"
 branch="$(git -C "$dir" branch --show-current 2>/dev/null || git branch --show-current 2>/dev/null)"
 
 case "$branch" in
