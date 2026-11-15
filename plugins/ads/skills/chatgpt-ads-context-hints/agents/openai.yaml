@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGPT Ads Context Hints"
+  short_description: "Write source-backed context hints for ChatGPT ads"
+  default_prompt: "Use $chatgpt-ads-context-hints to draft useful context hints for my offer and explain the evidence behind each one."

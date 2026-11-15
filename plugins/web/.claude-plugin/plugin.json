@@ -1,0 +1,22 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Web front ends: structure rules, app screens with every state, content pages with accessibility and performance checks. React/Next.js and Astro notes.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/web",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "web",
+    "frontend",
+    "react",
+    "nextjs",
+    "astro"
+  ],
+  "dependencies": [
+    "check"
+  ]
+}

@@ -1,0 +1,110 @@
+# Names blocked in SKILL.md files of the engineering plugins (ship, check, server, web, mobile, kit).
+# Stack detail goes in references/<stack>.md instead. Whole-word, case-sensitive match.
+# Languages
+C#
+F#
+Java
+JavaScript
+TypeScript
+Python
+Ruby
+PHP
+Kotlin
+Swift
+Dart
+Rust
+Scala
+Elixir
+# Backend frameworks and libraries
+.NET
+ASP.NET
+dotnet
+EF Core
+Entity Framework
+Django
+Flask
+FastAPI
+Rails
+Laravel
+Spring
+Spring Boot
+Hibernate
+Express
+NestJS
+Node.js
+Phoenix
+Hangfire
+Celery
+Sidekiq
+Prisma
+Sequelize
+TypeORM
+SQLAlchemy
+Alembic
+Flyway
+Liquibase
+# Front-end and mobile frameworks
+React
+React Native
+Next.js
+Nuxt
+Vue
+Angular
+Svelte
+SvelteKit
+Astro
+Flutter
+Riverpod
+SwiftUI
+UIKit
+Jetpack
+Jetpack Compose
+Expo
+Ionic
+Xamarin
+MAUI
+Kotlin Multiplatform
+KMP
+# Test frameworks
+xUnit
+NUnit
+JUnit
+pytest
+RSpec
+Jest
+Vitest
+Mocha
+XCTest
+Espresso
+# Build tools and package managers
+npm
+yarn
+pnpm
+pip
+Gradle
+Maven
+NuGet
+CocoaPods
+# Vendors and infrastructure products
+Postgres
+PostgreSQL
+MySQL
+SQLite
+MongoDB
+Redis
+Kafka
+RabbitMQ
+Docker
+Kubernetes
+AWS
+Azure
+GCP
+Firebase
+FCM
+APNs
+Sentry
+Datadog
+Grafana
+Vercel
+Heroku
+Shorebird

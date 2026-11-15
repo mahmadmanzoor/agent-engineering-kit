@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGPT Ads CSV Upload"
+  short_description: "Prepare, upload, and repair ChatGPT ad CSV imports"
+  default_prompt: "Use $chatgpt-ads-csv-upload to prepare and upload ads through the CSV template, verify the saved result, and keep new ads paused."

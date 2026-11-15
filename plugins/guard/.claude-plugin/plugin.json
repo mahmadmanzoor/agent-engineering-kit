@@ -1,0 +1,18 @@
+{
+  "name": "guard",
+  "version": "1.0.0",
+  "description": "Two hooks: block a git commit that adds something that looks like a secret, and block commits straight on main or master.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/guard",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "secrets",
+    "git",
+    "safety"
+  ]
+}

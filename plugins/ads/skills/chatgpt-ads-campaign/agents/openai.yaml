@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGPT Ads Campaign"
+  short_description: "Build and verify ChatGPT Ads through the browser"
+  default_prompt: "Use $chatgpt-ads-campaign to create a new campaign in my ChatGPT Ads account through browser control and verify the saved campaign, ad groups, ads, images, and budget."

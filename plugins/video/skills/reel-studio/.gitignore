@@ -1,0 +1,10 @@
+# Per computer: licensed audio, characters, paid voice lines, the tools check
+node_modules/
+library/
+tools.md
+out/
+renders/
+reels/
+*.mp4
+.env
+.env.*

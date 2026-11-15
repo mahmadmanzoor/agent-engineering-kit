@@ -1,0 +1,18 @@
+{
+  "name": "ads",
+  "version": "1.0.0",
+  "description": "ChatGPT Ads Manager: research context hints, build and verify campaigns, and prepare CSV ad imports. Never launches or spends without your yes.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/ads",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "ads",
+    "chatgpt",
+    "marketing",
+    "campaigns"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "crew",
+  "version": "1.0.0",
+  "description": "Three review agents that work cold, without your chat: plan-reviewer (before code), code-reviewer (after), test-writer.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/crew",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "agents",
+    "review",
+    "architecture",
+    "testing"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "description": "LinkedIn in your own voice: posts with hook options, comments, replies, DMs, inbox triage, weekly plan, profile score, carousels, repurposing long content, and a check that strips AI tells. Never posts without your yes.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/linkedin",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "linkedin",
+    "writing",
+    "content",
+    "social"
+  ]
+}

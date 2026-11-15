@@ -1,0 +1,19 @@
+# Context-hint research notes
+
+Research checked October 14, 2026 against current primary writing guidance, Help Center definitions, developer docs/schema, an official webinar and an advertiser case. The source project's September 20 audits, October 5 saved examples and original context-hints prompt were compared separately. This is a best-practice synthesis, not evidence that this kit improved campaign performance.
+
+## Practical decisions
+
+- Specificity over padding. One useful product, need or situation detail helps explain an offer. A short phrase may work; no reviewed source establishes that every hint should be long, a full sentence, or a fixed character count. The dedicated [writing guide](https://help.openai.com/en/articles/20001521-write-context-hints-for-chatgpt-ads) prefers natural, focused phrasing.
+- Overlap can be useful. A landing-page feature can be reused when it explains a customer need. Product terms need not be removed merely because they already appear in an ad. The [Ad Groups reference](https://developers.openai.com/ads/api-reference/ad-groups) supports descriptions or keywords; unsupported exact-match assumptions and disconnected keyword stuffing remain poor inputs. Removing redundant entries is this kit's editing convention, not a documented overlap penalty.
+- Facts come first. The [writing guide](https://help.openai.com/en/articles/20001521-write-context-hints-for-chatgpt-ads) permits supported price, availability and service-area context. Keep those current. A desired persona or use case is not enough unless the offering actually fits it. Don't invent missing product features, costs or outcomes.
+- Business scope differs from controls. A true local service area can explain an offering; it cannot restrict delivery. The [Targeting guide](https://developers.openai.com/ads/campaign-targeting#context-hints) puts eligibility controls elsewhere and makes no exact-word trigger guarantee.
+- Coherent groups, useful variety. Related needs can share a group; use a split when public messaging or destinations require it, per [Create Ad Groups](https://help.openai.com/en/articles/20001211-create-ad-groups-for-chatgpt-ads). Neither one hint per group nor a split for each synonym is documented best practice.
+- Count and length are different questions. The [published schema](https://developers.openai.com/ads/openapi.json) caps a group's list at 2,000 entries and states no per-entry length constraint in the reviewed fields. That is not an optimal count or proof that every UI permits unlimited text. Five starters comes from the source prompt; provide fewer if the facts support fewer distinct ideas. Check live field validation.
+- Preserve the list. [Targeting](https://developers.openai.com/ads/campaign-targeting#context-hints) documents replacement, not append, and requires readback. The [bulk checklist](https://help.openai.com/en/articles/20001218-bulk-upload-campaign-schema-checklist) makes the same point for ad-group workbook cells. The kit's ad-only CSV has no context-hints column.
+
+## What the evidence does not prove
+
+The [official webinar](https://webinar.openai.com/on-demand/067e119c-9315-4087-8006-8f4dfb236b65) discusses measurement and avoiding unnecessary campaign fragmentation. It does not supply a hint-count formula. The [Talkpal case](https://ads.openai.com/customers/talkpal) describes intent-based groups plus needs-based hints alongside other campaign work; it does not isolate hint effects. The [FAQ](https://help.openai.com/en/articles/20001220-frequently-asked-questions) supplies no general performance benchmark.
+
+The original project's exact saved hints demonstrate how the workflow was used and verified, not which phrases caused results. No source reviewed establishes a universal best hint length/count, a keyword-overlap penalty, or a controlled incremental lift for these examples. Treat such strategy claims as hypotheses requiring appropriate measured tests.

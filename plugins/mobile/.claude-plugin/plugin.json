@@ -1,0 +1,22 @@
+{
+  "name": "mobile",
+  "version": "1.0.0",
+  "description": "Mobile apps on any stack: app structure, a shared core for Android and iOS, background work, an offline outbox, design to screen, widgets, real-device testing.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/mobile",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "mobile",
+    "flutter",
+    "react-native",
+    "kotlin",
+    "swift"
+  ],
+  "dependencies": [
+    "check"
+  ]
+}

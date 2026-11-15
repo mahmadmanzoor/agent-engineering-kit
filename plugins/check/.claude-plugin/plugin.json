@@ -1,0 +1,19 @@
+{
+  "name": "check",
+  "version": "1.0.0",
+  "description": "Test rules, test-first, writing tests, code review with a separate placement pass, security and privacy review, accessibility audit, performance checks, privacy-safe analytics.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/check",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "code-review",
+    "security",
+    "accessibility",
+    "performance"
+  ]
+}

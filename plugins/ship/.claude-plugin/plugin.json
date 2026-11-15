@@ -1,0 +1,25 @@
+{
+  "name": "ship",
+  "version": "1.0.0",
+  "description": "Idea to production as plain steps: idea brief, new repo setup, feature research, spec, issues, plan review before code, test-first build, commit check, PR, CI, deploy check, merge gates, release, observe, incident, postmortem, cleanup.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/ship",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "workflow",
+    "spec",
+    "issues",
+    "pull-request",
+    "ci",
+    "release",
+    "incident"
+  ],
+  "dependencies": [
+    "check",
+    "crew"
+  ]
+}

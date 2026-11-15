@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server code: layers and rules, contract-first endpoints, safe migrations, scheduled jobs and notifications, file uploads, read-only database checks.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/server",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "backend",
+    "api",
+    "migrations",
+    "jobs",
+    "uploads"
+  ],
+  "dependencies": [
+    "check"
+  ]
+}

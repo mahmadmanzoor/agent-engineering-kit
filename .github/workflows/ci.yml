@@ -1,0 +1,45 @@
+name: CI
+
+# Public repo: GitHub-hosted runners only. A self-hosted runner would run any PR author's code.
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event_name == 'pull_request' && github.ref || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kit checks
+        run: python3 scripts/check.py
+      - name: Shell scripts parse
+        run: for f in plugins/guard/scripts/*.sh scripts/*.sh; do bash -n "$f"; done
+      - name: Hook JSON parses
+        run: python3 -m json.tool plugins/guard/hooks/hooks.json > /dev/null
+
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Validate marketplace and plugins
+        run: |
+          claude plugin validate . --strict
+          for p in plugins/*/; do claude plugin validate "$p" --strict; done

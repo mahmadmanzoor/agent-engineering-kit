@@ -1,0 +1,19 @@
+{
+  "name": "video",
+  "version": "1.0.0",
+  "description": "Short vertical video ads and reels drawn in code, with voiceover, music, sound effects and captions.",
+  "author": {
+    "name": "Muhammad Ahmad",
+    "url": "https://github.com/mahmadmanzoor"
+  },
+  "homepage": "https://github.com/mahmadmanzoor/agent-engineering-kit/tree/main/plugins/video",
+  "repository": "https://github.com/mahmadmanzoor/agent-engineering-kit",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "reels",
+    "tiktok",
+    "shorts",
+    "ads"
+  ]
+}
