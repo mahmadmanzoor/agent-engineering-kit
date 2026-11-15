@@ -18,6 +18,21 @@ except Exception:
   fi
 }
 
+# Print the session's working directory ("cwd") from the PreToolUse JSON on stdin.
+# Prints nothing when the payload has none.
+read_cwd() {
+  if command -v python3 >/dev/null 2>&1; then
+    python3 -c '
+import json, sys
+try:
+    print(json.load(sys.stdin).get("cwd", "") or "")
+except Exception:
+    print("")'
+  elif command -v jq >/dev/null 2>&1; then
+    jq -r '.cwd // ""' 2>/dev/null
+  fi
+}
+
 # True when the command text contains a git commit.
 is_commit() {
   case "$1" in
